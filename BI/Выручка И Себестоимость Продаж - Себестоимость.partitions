@@ -1,0 +1,61 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="05592e7e-f4cc-4759-8204-b0805188bfd2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Выручка И Себестоимость Продаж - Себестоимость</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>v Выручка И Себестоимость Продаж Цены Закупочные</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0c197baa-63ef-4328-8b85-d44fc4a09fc3">
+          <ID>v Выручка И Себестоимость Продаж Цены Закупочные</ID>
+          <Name>v Выручка И Себестоимость Продаж Цены Закупочные</Name>
+          <CreatedTimestamp>2024-09-13T08:16:19.523333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2025-06-10T06:14:25.596667Z</LastSchemaUpdate>
+          <LastProcessed>2025-07-03T04:23:12.376667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="496020c5-bb62-41cf-b590-8855cb21c7c0">
+            <DataSourceViewID>WH-dev</DataSourceViewID>
+            <TableID>dbo_v_ВыручкаИСебестоимостьПродаж_ЦеныЗакупочные</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="fc0bec9b-14a1-4f92-8f06-652d93b70979">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="34756110-8e16-4e18-8761-f4f68377401c" />
+          </ProactiveCaching>
+          <EstimatedSize>191698820</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Currency Rates</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f6081cb2-0dcb-474b-93dd-6dcb18828e02">
+          <ID>Currency Rates</ID>
+          <Name>Currency Rates</Name>
+          <CreatedTimestamp>2025-05-29T15:10:34.003333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2025-06-10T06:14:25.753333Z</LastSchemaUpdate>
+          <LastProcessed>2025-07-03T04:01:25.513333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="06744ccf-fe75-4aa1-999e-8eff6f6e5e28">
+            <DataSourceViewID>WH-dev</DataSourceViewID>
+            <TableID>dbo_CurrencyRates</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="8e960d61-bf97-4da7-ade3-0f97f7002fd8">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b6be8f1c-2442-4343-8343-02e1e934fcd8" />
+          </ProactiveCaching>
+          <EstimatedSize>2084</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
