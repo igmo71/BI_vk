@@ -17,6 +17,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Цены Номенклатуры.cube</Name>
+      <FullPath>Цены Номенклатуры.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Цены Номенклатуры.partitions</Name>
+          <FullPath>Цены Номенклатуры.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -58,6 +68,18 @@
     <ProjectItem>
       <Name>Структура Предприятия.dim</Name>
       <FullPath>Структура Предприятия.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Виды Цен.dim</Name>
+      <FullPath>Виды Цен.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Номенклатура - Типы Упаковки.dim</Name>
+      <FullPath>Номенклатура - Типы Упаковки.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Упаковки Единицы Измерения.dim</Name>
+      <FullPath>Упаковки Единицы Измерения.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
