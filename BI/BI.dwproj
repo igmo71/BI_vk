@@ -74,10 +74,6 @@
       <FullPath>Виды Цен.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Номенклатура - Типы Упаковки.dim</Name>
-      <FullPath>Номенклатура - Типы Упаковки.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Упаковки Единицы Измерения.dim</Name>
       <FullPath>Упаковки Единицы Измерения.dim</FullPath>
     </ProjectItem>
